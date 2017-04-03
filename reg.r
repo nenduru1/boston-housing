@@ -13,5 +13,5 @@ y_pred=predict(back,newdata = test)
 
 output=cbind(test$MEDV,y_pred)
 colnames(output) = c('test','predicted')
-write.csv(output,file='r_output.csv',append = FALSE)
+write.csv(output,file='r_output.csv')
 

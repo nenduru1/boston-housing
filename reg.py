@@ -44,17 +44,7 @@ type(y_pred)
 
 
 #read all outputs
-sas=pd.read_csv('sas_output.csv')
-sas.head()
 
-py=pd.read_csv('py_output.csv')
-py.head()
 
-r=pd.read_csv('r_output.csv')
-r.head()
-plt.show(py['test'],py['predicted'])
-plt.scatter(py['test'],py['predicted'])
 
-plt.scatter(r['test'],r['predicted'])
 
-plt.hist(sas['test'])
